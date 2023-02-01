@@ -1,7 +1,7 @@
 'use client';
 import { usePathname } from 'next/navigation';
-import { Header } from '@/components'
-import './globals.css'
+import { Header, Footer } from '@/components'
+import './styles/globals.css'
 
 export default function RootLayout({ children, }: { children: React.ReactNode }) {
   const pathname = usePathname() || '/';
@@ -12,6 +12,8 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
         <Header route={pathname} />
         <main className='appContent'>
           {children}
+
+          <Footer route={pathname} />
         </main>
       </body>
     </html >

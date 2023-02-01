@@ -1,12 +1,11 @@
-
-import { Inter } from '@next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import { QuizLayout } from '@/components'
 
 export default function Home() {
     return (
         <>
-            I AM HERE
+            <QuizLayout>
+                <h1 className='text-black'>Quiz</h1>
+            </QuizLayout>
         </>
     )
 }

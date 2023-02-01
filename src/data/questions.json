@@ -1,0 +1,37 @@
+[
+    {
+        "question": "Do you prefer spending time alone or with others?",
+        "answerValues": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "question": "Do you find it easy to strike up conversations with new people?",
+        "answerValues": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "question": "Do you feel drained after spending time in social situations?",
+        "answerValues": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "question": "Do you enjoy being the center of attention?",
+        "answerValues": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "question": "Do you recharge your energy by spending time alone or with others?",
+        "answerValues": [
+            "Yes",
+            "No"
+        ]
+    }
+]

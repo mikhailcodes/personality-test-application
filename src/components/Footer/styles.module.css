@@ -1,0 +1,15 @@
+.footer {
+  @apply bg-transparent absolute bottom-0 w-full;
+}
+
+.container {
+  @apply max-w-7xl mx-auto;
+}
+
+.footerHome {
+  @apply text-center text-base text-gray-400;
+}
+
+.footerText {
+  @apply text-base text-gray-400 mb-2;
+}

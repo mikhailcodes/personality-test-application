@@ -106,8 +106,10 @@ a {
 
 .appContainer {
   height: 100vh;
+  overflow: hidden;
 }
 
 .appContent {
   overflow-y: auto;
+  height: 96%;
 }
