@@ -1,0 +1,59 @@
+.contentContainer {
+  @apply text-black;
+}
+
+.questionSteps {
+  @apply text-lg text-gray-500;
+}
+
+.questionLabel {
+  @apply text-black text-4xl font-semibold my-6;
+}
+
+.answersBlock {
+  @apply text-black space-y-3;
+}
+
+.answer {
+  @apply relative block bg-white border rounded-lg shadow-sm px-6 py-4 cursor-pointer w-full;
+}
+
+.answerAnswered {
+  @apply border-brandPurple text-brandPurple bg-brandPurple/5;
+}
+
+.amswerInner {
+  @apply flex flex-col text-left space-y-2;
+}
+
+.shortAnswerInput {
+  @apply block w-full border rounded-lg shadow-sm px-6 py-4 cursor-pointer;
+}
+
+.large {
+  @apply text-lg;
+}
+
+.bold {
+  @apply font-bold;
+}
+
+.details {
+  @apply text-sm text-gray-500;
+}
+
+.buttons {
+  @apply mt-12 flex justify-between w-full;
+}
+
+.btn {
+  @apply flex items-center;
+}
+
+.prevBtn {
+  @apply relative block border rounded-lg shadow-sm px-6 py-4 cursor-pointer bg-gray-300;
+}
+
+.nextBtn {
+  @apply relative block text-white bg-brandPurple border rounded-lg shadow-sm px-6 py-4 cursor-pointer;
+}

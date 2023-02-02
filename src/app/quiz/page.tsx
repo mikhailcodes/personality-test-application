@@ -1,10 +1,11 @@
 import { QuizLayout } from '@/components'
+import QuestionsBlock from './questionsBlock'
 
 export default function Home() {
     return (
         <>
             <QuizLayout>
-                <h1 className='text-black'>Quiz</h1>
+                <QuestionsBlock />
             </QuizLayout>
         </>
     )

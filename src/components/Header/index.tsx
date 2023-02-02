@@ -15,14 +15,6 @@ const Header = ({ route }: HeaderProps) => {
                         </Link>
                     </div>
 
-                    {route != '/' && (
-                        <div className={styles.btnContainer}>
-                            <Link className={styles.button}>
-                                Restart Test
-                            </Link>
-
-                        </div>
-                    )}
                 </div>
             </nav>
         </header>
