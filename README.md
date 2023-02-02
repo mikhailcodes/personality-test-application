@@ -5,6 +5,7 @@ This is a solution to the technical test to create a simple application, which u
 ## Quick Links
 
 - [Loom Video](https://www.loom.com/share/b4b013feeeba4135aa433fd4ef4911ef) - Describes technologies used and how the application functions
+- [Low-Fi Designs](https://www.figma.com/file/Ft9LC55K8MSyC8mM0qaGcR/Untitled?node-id=1%3A28210&t=etWnkFyQIk9bT4Ku-1) - Quickly fleshed out the look of the application before coding.
 
 ## Getting Started
 
