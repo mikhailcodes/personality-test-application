@@ -2,6 +2,10 @@
 
 This is a solution to the technical test to create a simple application, which uses an in-memory database to log responses and generate a results to the end user.
 
+## Quick Links
+
+- [Loom Video](https://www.loom.com/share/b4b013feeeba4135aa433fd4ef4911ef) - Describes technologies used and how the application functions
+
 ## Getting Started
 
 First, run the development server:

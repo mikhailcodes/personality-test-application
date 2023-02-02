@@ -1,7 +1,8 @@
 "use client"
 import React, { useState } from 'react';
-import Questions from './question';
+import Questions from '../../data/question';
 import styles from './styles.module.css';
+import { useRouter } from 'next/navigation';
 
 interface Answer {
     id: number;
@@ -11,7 +12,7 @@ interface Answer {
 }
 
 const QuestionsBlock = () => {
-
+    const router = useRouter()
     const questions = Questions(); // Questions data
 
     const [questionIndex, setQuestionIndex] = useState(0); // Question index state to display questions
@@ -19,7 +20,6 @@ const QuestionsBlock = () => {
     const currentQuestion = questions[questionIndex]; // Current question to display question
 
     const [answers, setAnswers] = useState<any[]>([]); // Answer state to store answer weights
-    const [showResult, setShowResult] = useState(false); // Show result state to display result
 
     const nextQuestion = () => { // Next question
         setQuestionIndex(questionIndex + 1);
@@ -37,6 +37,28 @@ const QuestionsBlock = () => {
     const isAllAnswered = () => {
         return answers.length === questions.length; // check if all questions are answered
     };
+
+    const calculateResult = () => {
+        const average = answers.slice(0, 4).reduce((a, b) => a + b, 0) / 4;
+        return average > 1 ? 'Extrovert' : 'Introvert';
+    };
+
+    /**
+     * It takes an array of answers, calculates the result, and stores it in localStorage
+     * @param {any[]} answers - any[] - this is the array of answers that the user has selected.
+     */
+    const storeAnswers = (answers: any[]) => {
+        const results = JSON.parse(localStorage.getItem('results') || '[]');
+        results.push({
+            answers,
+            result: calculateResult()
+        });
+        localStorage.setItem('results', JSON.stringify(results));
+        setTimeout(() => {
+            router.push("/results");
+        }, 500);
+
+    }
 
 
     return (
@@ -120,7 +142,7 @@ const QuestionsBlock = () => {
                 {questionIndex == questions.length - 1 && isAllAnswered() && (
                     <button className={styles.nextBtn}
                         onClick={() => {
-                            setShowResult(true);
+                            storeAnswers(answers);
                         }}>
                         <div className={styles.btn}>
                             <div className={styles.large}>
@@ -130,6 +152,8 @@ const QuestionsBlock = () => {
                     </button>
                 )}
             </div>
+
+
         </div>
     )
 }

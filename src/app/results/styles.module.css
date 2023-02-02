@@ -1,0 +1,18 @@
+.contentContainer {
+  @apply text-black w-1/2 mx-auto mt-24 text-center;
+}
+.name {
+  @apply text-6xl;
+}
+
+.results {
+  @apply text-3xl;
+}
+
+.resultBlock {
+  @apply space-y-6;
+}
+
+.button {
+  @apply relative block text-white bg-brandPurple border rounded-lg shadow-sm px-6 py-4 cursor-pointer mx-auto mt-6;
+}
